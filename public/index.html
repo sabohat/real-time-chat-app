@@ -6,8 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.min.js'></script>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <h1>Hi there</h1>
+  <div id="global-chat">
+    <div id="chat-window">
+      <div id="output"></div>
+      <div id="feedback"></div>
+    </div>
+    <input type="text" id='handle' placeholder="Handle">
+    <input type="text" id='message' placeholder="Message">
+    <button id="send">Send</button>
+  </div>
+  <script src="./chat.js"></script>
 </body>
 </html>
